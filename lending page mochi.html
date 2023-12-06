@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Ecommerce</title>
+    <!-- Tambahkan link ke stylesheet Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header -->
+    <header class="bg-gray-800 shadow-md">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <div class="text-2xl font-bold text-blue-500">Mochi</div>
+            <nav class="space-x-4">
+                <a href="#home" class="text-white hover:text-blue-500">Home</a>
+                <a href="#produk" class="text-white hover:text-blue-500">Shop</a>
+                <a href="#" class="text-white hover:text-blue-500">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-cover bg-center" style="background-image: url('/hero.jpg'); height: 400px;">
+        <div class="container mx-auto flex items-center justify-center h-full text-white text-center">
+            <div>
+                <h1 class="text-4xl font-bold mb-2">Selamat Datang</h1>
+                <p class="text-lg">mochi kami enak loh untuk di makan sambil nyantai.</p>
+            <a href="#" class="mt-4 inline-block bg-white text-blue-500 rounded-full py-2 px-6 font-bold hover:bg-blue-700 hover:text-white">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="produk" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center text-blue-500">Products</h2>
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Card (repeat for each product) -->
+                <div class="bg-white shadow-md hover:scale-105 hover:shadow-xl duration-500 rounded-xl">
+                    <a href="#">
+                      <img src="/produk/produk1.jpeg" alt="Product image" class="h-80 w-full object-cover rounded-t-xl" />
+                    </a>
+                    <div class="px-4 py-3 w-72">
+                      <span class="text-gray-400 mr-3 uppercase text-xs">Brand</span>
+                      <p class="text-lg font-bold text-black truncate block capitalize">Mochi bites macha</p>
+                      <div class="flex items-center">
+                        <p class="text-lg font-semibold text-black cursor-auto my-3">Rp.10.000</p>
+                        <del>
+                          <p class="text-sm text-gray-600 cursor-auto ml-2">Rp.15.000</p>
+                        </del>
+                      </div>
+                      <button class="mt-4 bg-blue-500 text-white rounded-full py-2 px-6 font-bold hover:bg-blue-700">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md hover:scale-105 hover:shadow-xl duration-500 rounded-xl">
+                    <a href="#">
+                      <img src="/produk/produk2.jpeg" alt="Product image" class="h-80 w-full object-cover rounded-t-xl" />
+                    </a>
+                    <div class="px-4 py-3 w-72">
+                      <span class="text-gray-400 mr-3 uppercase text-xs">Brand</span>
+                      <p class="text-lg font-bold text-black truncate block capitalize">Mochi bites coklat</p>
+                      <div class="flex items-center">
+                        <p class="text-lg font-semibold text-black cursor-auto my-3">Rp.10.000</p>
+                        <del>
+                          <p class="text-sm text-gray-600 cursor-auto ml-2">Rp.15.000</p>
+                        </del>
+                      </div>
+                      <button class="mt-4 bg-blue-500 text-white rounded-full py-2 px-6 font-bold hover:bg-blue-700">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md hover:scale-105 hover:shadow-xl duration-500 rounded-xl">
+                    <a href="#">
+                      <img src="/produk/produk3.jpeg" alt="Product image" class="h-80 w-full object-cover rounded-t-xl" />
+                    </a>
+                    <div class="px-4 py-3 w-72">
+                      <span class="text-gray-400 mr-3 uppercase text-xs">Brand</span>
+                      <p class="text-lg font-bold text-black truncate block capitalize">Mochi  bites susu</p>
+                      <div class="flex items-center">
+                        <p class="text-lg font-semibold text-black cursor-auto my-3">Rp.10.000</p>
+                        <del>
+                          <p class="text-sm text-gray-600 cursor-auto ml-2">Rp.15.000</p>
+                        </del>
+                      </div>
+                      <button class="mt-4 bg-blue-500 text-white rounded-full py-2 px-6 font-bold hover:bg-blue-700">Beli Sekarang</button>
+                    </div>
+                </div>
+                <!-- Repeat product cards as needed -->
+            </div>
+        </div>
+    </section>
+
+<!-- Foooter -->
+<section class="bg-gray-800 text-white">
+    <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+        <nav class="flex flex-wrap justify-center -mx-5 -my-2">
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6  hover:text-blue-500">
+                    Home
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6  hover:text-blue-500">
+                    Produk
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6  hover:text-blue-500">
+                    Contact
+                </a>
+            </div>
+        </nav>
+        <a href="" target="_blank" rel="noopener"
+        title="Profil Instagram tohabuza"
+        class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <title>Shopee</title>
+          <path
+            d="M15.9414 17.9633c.229-1.879-.981-3.077-4.1758-4.0969-1.548-.528-2.277-1.22-2.26-2.1719.065-1.056 1.048-1.825 2.352-1.85a5.2898 5.2898 0 0 1 2.8838.89c.116.072.197.06.263-.039.09-.145.315-.494.39-.62.051-.081.061-.187-.068-.281-.185-.1369-.704-.4149-.983-.5319a6.4697 6.4697 0 0 0-2.5118-.514c-1.909.008-3.4129 1.215-3.5389 2.826-.082 1.1629.494 2.1078 1.73 2.8278.262.152 1.6799.716 2.2438.892 1.774.552 2.695 1.5419 2.478 2.6969-.197 1.047-1.299 1.7239-2.818 1.7439-1.2039-.046-2.2878-.537-3.1278-1.19l-.141-.11c-.104-.08-.218-.075-.287.03-.05.077-.376.547-.458.67-.077.108-.035.168.045.234.35.293.817.613 1.134.775a6.7097 6.7097 0 0 0 2.8289.727 4.9048 4.9048 0 0 0 2.0759-.354c1.095-.465 1.8029-1.394 1.9449-2.554zM11.9986 1.4009c-2.068 0-3.7539 1.95-3.8329 4.3899h7.6657c-.08-2.44-1.765-4.3899-3.8328-4.3899zm7.8516 22.5981-.08.001-15.7843-.002c-1.074-.04-1.863-.91-1.971-1.991l-.01-.195L1.298 6.2858a.459.459 0 0 1 .45-.494h4.9748C6.8448 2.568 9.1607 0 11.9996 0c2.8388 0 5.1537 2.5689 5.2757 5.7898h4.9678a.459.459 0 0 1 .458.483l-.773 15.5883-.007.131c-.094 1.094-.979 1.9769-2.0709 2.0059z" />
+        </svg>
+      </a>
+    <div>
+
+        <p class="mt-8 text-base leading-6 text-center text-blue-400">
+            © 2023 Eza
+        </p>
+    </div>
+</section>
+
+</body>
+</html>
